@@ -88,7 +88,7 @@ usando a frase:
 */
 var bookName = 'Javascript';
 
-console.log("O livro " + bookName + " tem " + book(bookName).quantidadePaginas + " páginas!"); 
+console.log("O livro " + bookName + " tem " + book(bookName).quantidadePaginas + " páginas!");  
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
