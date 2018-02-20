@@ -1,5 +1,35 @@
-(function() {
+(function (dom) {
   'use strict';
+
+  var $urlImagem = new dom('[data-js="url-image"]');
+  var $marcaModelo = new dom('[data-js="input-marca-modelo"]');
+  var $ano = new dom('[data-js="input-ano"]');
+  var $placa = new dom('[data-js="input-placa"]');
+  var $cor = new dom('[data-js="input-cor"]');
+  var $btCadastrar = new dom('[data-js="bt-cadastrar"]');
+  var $tableCars = new dom('[data-js="table-cars"]');
+
+  function initial(){
+    initialEvents();
+  }
+
+  function initialEvents(){
+    $btCadastrar.get()[0].addEventListener('click', register ,false);
+  }
+
+  function register(event) {
+    event.preventDefault();
+    console.log('registrou com sucesso!');
+  }
+
+  function addCarIntoTable() {
+    // pegar os valores dos campos
+    // criar o elemento tr
+    // crirar o elemento td
+    // adicionar o valor do input no td
+    // adicionar o td no tr
+    // adicionar o tr na table
+  }
 
   /*
   Vamos estruturar um pequeno app utilizando módulos.
@@ -35,5 +65,5 @@
   E aqui nesse arquivo, faça a lógica para cadastrar os carros, em um módulo
   que será nomeado de "app".
   */
-
-})();
+  initial();
+})(window.dom);

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    form {
+      display: inline-grid;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+  </style>
+</head>
+<body>
+<div>
+  <form data-js="form-cars">
+    <label for="url-image">Url da imagem</label>
+    <input type="text" id="url-image" data-js="url-image"><br>
+
+    <label for="input-marca-modelo">Marca/Modelo</label>
+    <input type="text" id="input-marca-modelo" data-js="input-marca-modelo"><br>
+
+    <label for="input-ano">Ano</label>
+    <input type="text" id="input-ano" data-js="input-ano"><br>
+
+    <label for="input-placa">Placa</label>
+    <input type="text" id="input-placa" data-js="input-placa"><br>
+
+    <label for="input-cor">Cor</label>
+    <input type="text" id="input-cor" data-js="input-cor"><br>
+
+    <button data-js="bt-cadastrar"> Cadastrar</button>
+  </form>
+</div>
+
+<div>
+  <table data-js="table-cars">
+    <tr>
+      <th>Imagem</th>
+      <th>Marca/Modelo</th>
+      <th>Ano</th>
+      <th>Placa</th>
+      <th>Cor</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<script src="dom.js"></script>
+<script src="challenge-29.js"></script>
+</body>
+</html>
